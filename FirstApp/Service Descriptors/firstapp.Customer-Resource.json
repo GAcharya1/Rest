@@ -1,0 +1,110 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:2080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/Customer" : {
+      "get" : {
+        "description" : "",
+        "operationId" : "get-Customer",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ResponseElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CustomerGender" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "default" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerFirstName" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "default" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerLastName" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "default" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerId" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "default" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "ResponseElement" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "properties" : {
+          "$ref" : "#/definitions/properties"
+        }
+      }
+    },
+    "properties" : {
+      "type" : "object",
+      "properties" : {
+        "CustomerFirstName" : {
+          "$ref" : "#/definitions/CustomerFirstName"
+        },
+        "CustomerLastName" : {
+          "$ref" : "#/definitions/CustomerLastName"
+        },
+        "CustomerId" : {
+          "$ref" : "#/definitions/CustomerId"
+        },
+        "CustomerGender" : {
+          "$ref" : "#/definitions/CustomerGender"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/FirstApp/Service Descriptors/firstapp.Customer-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1511989147776"
+    },
+    {
+        "jsonSchemaLocation": "/FirstApp/Service Descriptors/firstapp.Resource1-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1512060818138"
+    },
+    {
+        "jsonSchemaLocation": "/FirstApp/Service Descriptors/firstapp.Resource1-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1512060818138"
+    },
+    {
+        "jsonSchemaLocation": "/FirstApp/Service Descriptors/firstapp.Resource1-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1512060818138"
+    }
+]}
